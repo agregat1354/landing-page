@@ -209,3 +209,20 @@ ul {
 .signup-section .button-signup {
     border: 3px solid white;
 }
+
+.footer {
+    background-color:#1f2937;
+    padding: 20px 0;
+}
+
+.footer .container {
+    max-width: var(--container-max-size);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.odin-cpr {
+    font-size: 15px;
+    color: white;
+}
