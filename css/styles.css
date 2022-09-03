@@ -103,7 +103,7 @@ ul {
 }
 
 .card-section .container {
-    max-width: var(--container-max-width);
+    max-width: var(--container-max-size);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -143,4 +143,30 @@ ul {
 .card-description {
     text-align: center;
     color: rgb(85, 85, 85);
+}
+
+.quote-section {
+    background-color:#e5e7eb;
+    padding: 150px 0 100px;
+}
+
+.quote-section .container {
+    max-width: var(--container-max-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: bolder;
+    color:#1f2937;
 }
