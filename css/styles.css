@@ -1,5 +1,6 @@
 :root {
     box-sizing: border-box;
+    --container-max-size: 1100px;
 }
 
 *,*::before,*::after {
@@ -24,12 +25,11 @@ a {
 }
 
 .nav {
-    height: 60px;
     background-color: #1f2937;
 }
 
 .nav .container {
-    max-width: 1100px;
+    max-width: var(--container-max-size);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -42,4 +42,105 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.hero {
+    background-color: #1f2937;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero .container {
+    max-width: var(--container-max-size);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.hero-header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    line-height: 150%;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.button-signup {
+    background-color: #3882f6;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 8px;
+}
+
+.hero-image {
+    flex: 1;
+    align-self: stretch;
+    color: white;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    background-color: white;
+    padding: 50px 0 100px;
+}
+
+.card-section .container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.cards-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-box {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+    background-color: white;
+    align-self: stretch;
+}
+
+.card-description {
+    text-align: center;
+    color: rgb(85, 85, 85);
 }
